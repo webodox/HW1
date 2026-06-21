@@ -1,0 +1,278 @@
+/* ============================
+   Base & Reset
+============================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  color: #2b2d33;
+  background-color: #fafaf7;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ============================
+   Header & Navigation
+============================ */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e7e5e0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #d96b3a;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  font-size: 0.95rem;
+  color: #2b2d33;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #d96b3a;
+}
+
+/* ============================
+   Profile Section
+============================ */
+.profile-section {
+  background-color: #fff5ee;
+  padding: 5rem 0;
+}
+
+.profile-grid {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  color: #d96b3a;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.profile-text h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: #1f2024;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #5b5d63;
+  max-width: 480px;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #d96b3a;
+  color: #ffffff;
+  padding: 0.7rem 1.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #d96b3a;
+  color: #d96b3a;
+}
+
+/* ============================
+   General Sections
+============================ */
+.section {
+  padding: 4rem 0;
+}
+
+.section h2 {
+  font-size: 1.9rem;
+  margin-bottom: 1.5rem;
+  color: #1f2024;
+}
+
+.section-intro {
+  color: #5b5d63;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+/* About Section */
+.about-section {
+  background-color: #ffffff;
+}
+
+.about-section p {
+  max-width: 720px;
+  color: #4a4c52;
+}
+
+/* Coursework Section */
+.coursework-section {
+  background-color: #f4f1ec;
+}
+
+.coursework-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.coursework-card {
+  background-color: #ffffff;
+  border: 1px solid #e7e5e0;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.coursework-card h3 {
+  color: #d96b3a;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.coursework-card p {
+  font-size: 0.92rem;
+  color: #5b5d63;
+}
+
+.coursework-placeholder {
+  border-style: dashed;
+  background-color: #faf8f4;
+}
+
+/* Hobbies Section */
+.hobbies-section {
+  background-color: #ffffff;
+}
+
+.hobbies-list {
+  list-style: none;
+  max-width: 600px;
+}
+
+.hobbies-list li {
+  background-color: #fff5ee;
+  border-left: 4px solid #d96b3a;
+  padding: 0.85rem 1.2rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0 6px 6px 0;
+  color: #3a3c41;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #1f2024;
+  color: #f4f1ec;
+}
+
+.contact-section h2 {
+  color: #ffffff;
+}
+
+.contact-section p {
+  color: #c9c7c2;
+  margin-bottom: 2rem;
+}
+
+.contact-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ============================
+   Footer
+============================ */
+footer {
+  background-color: #161618;
+  color: #9a9893;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.85rem;
+}
+
+/* ============================
+   Responsive Design
+============================ */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+    gap: 0.75rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .profile-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tagline {
+    margin: 0 auto 1.5rem;
+  }
+
+  .profile-text h1 {
+    font-size: 2rem;
+  }
+}

@@ -172,27 +172,42 @@ nav a:hover {
   gap: 1.5rem;
 }
 
+.coursework-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.coursework-category {
+  margin-bottom: 1rem;
+}
+
+.coursework-category h3 {
+  font-size: 1.05rem;
+  color: #d96b3a;
+  border-left: 4px solid #d96b3a;
+  padding: 0.6rem 1rem;
+  background-color: #ffffff;
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 1rem;
+}
+
 .coursework-card {
+  display: block;
   background-color: #ffffff;
   border: 1px solid #e7e5e0;
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 1.25rem;
+  text-align: center;
+  font-weight: 600;
+  color: #2b2d33;
+  transition: border-color 0.2s ease, transform 0.15s ease;
 }
 
-.coursework-card h3 {
-  color: #d96b3a;
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-}
-
-.coursework-card p {
-  font-size: 0.92rem;
-  color: #5b5d63;
-}
-
-.coursework-placeholder {
-  border-style: dashed;
-  background-color: #faf8f4;
+.coursework-card:hover {
+  border-color: #d96b3a;
+  transform: translateY(-2px);
 }
 
 /* Hobbies Section */

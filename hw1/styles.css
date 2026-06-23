@@ -1,6 +1,4 @@
-/* ============================
-   Base & Reset
-============================ */
+/* Base & Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,9 +23,7 @@ a {
   text-decoration: none;
 }
 
-/* ============================
-   Header & Navigation
-============================ */
+/* Header & Nav*/
 header {
   background-color: #ffffff;
   border-bottom: 1px solid #e7e5e0;
@@ -66,9 +62,7 @@ nav a:hover {
   color: #d96b3a;
 }
 
-/* ============================
-   Profile Section
-============================ */
+/* Profile Section */
 .profile-section {
   background-color: #fff5ee;
   padding: 5rem 0;
@@ -132,9 +126,7 @@ nav a:hover {
   color: #d96b3a;
 }
 
-/* ============================
-   General Sections
-============================ */
+/* General Sections */
 .section {
   padding: 4rem 0;
 }
@@ -250,9 +242,7 @@ nav a:hover {
   flex-wrap: wrap;
 }
 
-/* ============================
-   Footer
-============================ */
+/* Footer */
 footer {
   background-color: #161618;
   color: #9a9893;
@@ -261,9 +251,7 @@ footer {
   font-size: 0.85rem;
 }
 
-/* ============================
-   Responsive Design
-============================ */
+/*Responsive Design */
 @media (max-width: 768px) {
   .header-inner {
     flex-direction: column;
